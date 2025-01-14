@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email verification</title>
+  </head>
+  <body>
+    <div>
+      <p>Hi <%- name %></p>
+      <br />
+      <br />
+      <br />
+      <p>
+        It came to our notice you created an account with us click the link
+        below to verify your account
+      </p>
+      <br />
+      <br />
+      <br />
+      <div style="text-align: center; margin: 20px 0">
+        <a
+          href="<%- url %>"
+          style="
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: chocolate;
+            color: white;
+            font-size: 14px;
+          "
+        >
+          Verify Account
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
