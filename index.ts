@@ -8,7 +8,13 @@ env.config();
 const app: Application = express();
 app.use(express.json());
 mainApp(app);
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://e-samstore.onrender.com",
+    methods: ["GET", "PATCH", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 console.log("App initilized");
 console.log("Enviromnet", process.env.NODE_ENV);
